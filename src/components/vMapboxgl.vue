@@ -287,7 +287,88 @@ export default {
 
       mapboxGlMap.on('load', event => {
         var map = event.target
+        map.addLayer({
+          'id': 'layer1',
+          'type': 'symbol',
+          'source': {
+            'type': 'geojson',
+            'data': {
+              'type': 'FeatureCollection',
+              'features': [
+              {
+                'type': 'Feature',
+                'geometry': {
+                  'type': 'Point',
+                  'coordinates': [-105.13075200, 39.80166100]
+                }
+              },
+              {
+                'type': 'Feature',
+                'geometry': {
+                  'type': 'Point',
+                  'coordinates': [-105.16227900, 39.79082200]
+                }
+              },
+              {
+                'type': 'Feature',
+                'geometry': {
+                  'type': 'Point',
+                  'coordinates': [-105.08097800, 39.79158600]
+                }
+              }]
+            }
+          },
+          'maxzoom': 20,
+          'minzoom': 1,
+          'layout': {
+            'text-allow-overlap': true,
+            'text-ignore-placement': true,
+            'text-field': '#',
+            'text-size': 24,
+            'text-font': ['Open Sans Semibold']
+          },
+          'paint': {
+            'text-color': 'blue'
+          }
+        });
 
+        map.addLayer({
+          'id': 'layer2',
+          'type': 'symbol',
+          'source': {
+          'type': 'geojson',
+          'data': {
+            'type': 'FeatureCollection',
+            'features': [
+              {
+                'type': 'Feature',
+                'geometry': {
+                  'type': 'Point',
+                  'coordinates': [-105.15049400, 39.79129400]
+                }
+              },
+              {
+                'type': 'Feature',
+                'geometry': {
+                  'type': 'Point',
+                  'coordinates': [-105.05313100, 39.79207600]
+                }
+              }]
+            }
+          },
+          'maxzoom': 20,
+          'minzoom': 1,
+          'layout': {
+            'text-allow-overlap': true,
+            'text-ignore-placement': true,
+            'text-field': '#',
+            'text-size': 24,
+            'text-font': ['Open Sans Semibold']
+          },
+          'paint': {
+            'text-color': 'green'
+          }
+        });
         self.mapInstance = map
         self.changeLoadingMap(false)
       })
