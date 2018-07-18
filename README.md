@@ -48,7 +48,7 @@ Install dependencies, build the source files and preview
 
 ```bash
 # Clone repo
-git clone https://github.com/Naimikan/vue2-mapboxgl-component.git
+git clone https://github.com/andyhuang1117/MapboxGLTest.git
 
 # Install dependencies
 npm install
