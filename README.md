@@ -7,9 +7,7 @@
   </a>
 </p>
 
-<h1 align="center">vue2-mapboxgl-component | <a href="https://github.com/Naimikan/vue2-mapboxgl-component/wiki">Wiki</a></h1>
-
-<h5 align="center">VueJS component for Mapbox GL</h5>
+<h1 align="center">Standalone Vue App with MapboxGL to demonstrate bug</h1>
 
 <h2 align="center">Running the Standalone App</h2>
 
