@@ -11,38 +11,7 @@
 
 <h5 align="center">VueJS component for Mapbox GL</h5>
 
-<h2 align="center">Installation</h2>
-
-NPM
-```BASH
-npm install vue2-mapboxgl-component --save
-```
-
-<h2 align="center">Usage</h2>
-
-```html
-<template>
-  <v-mapboxgl :access-token="accessToken"></v-mapboxgl>
-</template>
-
-<script>
-  import vMapboxgl from 'vue2-mapboxgl-component'
-
-  export default {
-    data () {
-      return {
-        accessToken: '<YOUR_ACCESS_TOKEN>'
-      }
-    },
-
-    components: {
-      vMapboxgl
-    }
-  }
-</script>
-```
-
-<h2 align="center">Developing</h2>
+<h2 align="center">Running the Standalone App</h2>
 
 Install dependencies, build the source files and preview
 
